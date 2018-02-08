@@ -1,0 +1,19 @@
+<% include partials/header_main %>
+
+<div class="container">
+  <h1>Here is a summary of the entered data</h1>
+    <ul>
+        <% session.forEach(function(data){ %>
+            <li>
+                <h4><%= data.dur %> </h4>
+            </li>
+            <li>
+                <h4><%= data.numDrinks %> </h4>
+            </li>
+            
+        <% }) %>
+    </ul>
+</div>
+
+
+<%include partials/footer%>
