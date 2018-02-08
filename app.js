@@ -19,13 +19,8 @@ var databaseRoutes   = require("./routes/database"),
 
 //seed and start our database
 //seedDB();
-
-//option so not having a DATABASEURL won't break code
-//var url = process.env.DATABASEURL || "mongodb://localhost/hangovr"
-//mongoose.connect(url)
-
-mongoose.connect("mongodb://cjacobs7:Decklife19@ds229648.mlab.com:29648/hangovr"); //DATABASEURL added through export DATABASEURL==" "
-
+//mongoose.connect("mongodb://localhost/hangovr");
+mongoose.connect("mongodb://cjacobs7:Decklife19@ds229648.mlab.com:29648/hangovr");
 
 //semantics, copy pasted dont touch
 app.set("view engine", "ejs"); //so we don't have to type .ejs for each call
