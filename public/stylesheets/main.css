@@ -39,6 +39,17 @@ hr {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+.button-container{
+    width: 30%; 
+    margin: 25px auto;
+}
+
+@media (max-width: 768px){
+    .button-container{
+        width: 75%;
+        margin: 25px auto;
+    }
+}
 
 
 #example-text-input{	

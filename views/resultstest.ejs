@@ -1,19 +1,18 @@
 <% include partials/header_main %>
 
-<div class="container">
-  <h1>Here is a summary of the entered data</h1>
-    <ul>
-        <% session.forEach(function(data){ %>
-            <li>
-                <h4><%= data.dur %> </h4>
-            </li>
-            <li>
-                <h4><%= data.numDrinks %> </h4>
-            </li>
-            
-        <% }) %>
-    </ul>
+<div class="container" style="margin-top: 100px">
+    <div class="row">
+        <h1>Congratulations!</h1>
+        <hr>
+        <h2>Today, for your demographic, you are in the {{ '%0.2f'| format(percent)|float}} percentile of hungover. Wow. </h2>
+        <h2>Additionally, you're the #{{ rank }} most hungover human in your region! Pat yourself on the back.</h2>
+        </div>
+    </div>
+    <div class="row">
+            <hr>
+ 		    <h3>You made it to the end! We really appreciate you sharing your data, hope you're hungover again soon!</h3>
+            <h4><a href="/">Head back</a></h4>
+    </div>
 </div>
-
 
 <%include partials/footer%>
