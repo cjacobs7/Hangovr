@@ -24,7 +24,7 @@ var databaseRoutes   = require("./routes/database"),
 //var url = process.env.DATABASEURL || "mongodb://localhost/hangovr"
 //mongoose.connect(url)
 
-mongoose.connect(process.env.DATABASEURL); //DATABASEURL added through export DATABASEURL==" "
+mongoose.connect("mongodb://cjacobs7:Decklife19@ds229648.mlab.com:29648/hangovr"); //DATABASEURL added through export DATABASEURL==" "
 
 
 //semantics, copy pasted dont touch
